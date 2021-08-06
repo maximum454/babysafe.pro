@@ -69,33 +69,7 @@
 
 
 
-<section id="we-trust" style="background: url(../img/images/child-secure-bg3.png) center bottom repeat-x">
-<div class="container">
-    <h2 class="hdr">Как предотвратить падение ребенка из окна?</h2>
-        <div class="hr"></div>
-    <div class="hdr-gray">Посмотрите видео, как работает наша москитная сетка</div>
-<div class="video-box" style="background:#FFCB40">
-<div class="leap-1"></div>
-<div class="leap-2 d-none d-xxl-block"></div>
-<div class="wrapper">
 
-<div class="video-item">
-    <section class="video">
-            <div class="video-wrapper"  id="modal">
-                <video muted autoplay loop id="index-modal"  poster="/video/about.jpg" class="ty_video_1">
-                    <source src="/video/about.mp4" type="video/mp4" />
-                </video>
-                <div class="video-button" data-id="1">
-                    <div class="mask"><button class="btn btn-play"></button></div>
-                </div>
-            </div>
-    </section>
-</div>
-
-</div>
-</div>
-</div>
-</section>
 
 
 
