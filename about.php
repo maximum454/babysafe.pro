@@ -66,19 +66,7 @@
 
 
 
-<div id="statistic-block">
-    <h2 class="hdr">Статистика</h2>
-    <div class="hr no-text"></div>
-    <div class="container">
-    <div class="quotes-block d-md-flex d-none d-lg-block" style="margin-top:30px">
-      <img src="/img/images/setka_d.png">
-    </div>
-    <div class="quotes-block d-md-flex d-lg-none" style="margin-top:30px ">
-      <img src="/img/images/setka_m.png">
-    </div>
-    </div>
 
-</div>
 
 
 <section id="we-trust" style="background: url(../img/images/child-secure-bg3.png) center bottom repeat-x">
