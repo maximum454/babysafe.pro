@@ -292,17 +292,7 @@
 
 
 
-<section id="regions">
-<div class="container">
-    <h2 class="hdr">Представители в регионах</h2>
-    <div class="hr"></div>
-    <div class="hdr-gray">Мы есть не только в Астане!</div>
 
-</div>
-<div id="map-regions">
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abe81f4838e25e39db47516c458bd2002773c36e04ec5419a7b2d805a0a0b0040&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-</div>
-</section>
     </main>
 
 <? include('./footer.php');?>
