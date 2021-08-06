@@ -133,7 +133,7 @@
 </div>
 </section>
 
-<section id="reviews">
+<!-- <section id="reviews">
 <div class="block-headline">
 <div class="block-default-headline text-uppercase">Отзывы партнеров</div>
 </div>
@@ -160,7 +160,7 @@
 </div>
 </div>
 </div>
-</section>
+</section> -->
 
 
 
