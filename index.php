@@ -4,88 +4,89 @@ $active_1 = 'active';
 include('./header.php');?>
 
 <div class="main-slider mt-md-3 mt-lg-0">
-<div class="leap-1"></div>
-<div class="container-fluid">
-<div class="row">
-<div class="col-12 col-md-5 col-lg-6 headline-block mb-5 mb-lg-0">
-<div class="leap-2"></div>
-<div class="leap-3"></div>
-<div class="headline headline-big">Защита <span>детей</span> от выпадения</div>
-<div class="headline headline-small">Инновационная конструкция из оцинкованной стали и высокопрочной полиэстеровой сети, которая защитит ваших детей от выпадения из окна, а ваш дом от проникновения насекомых.</div>
+    <div class="leap-1"></div>
+    <div class="container-fluid">
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-12 col-md-5 col-lg-6 headline-block mb-5 mb-lg-0">
+                    <div class="leap-2"></div>
+                    <div class="leap-3"></div>
+                    <div class="headline headline-big">Защита <span>детей</span> от выпадения</div>
+                    <div class="headline headline-small">Инновационная конструкция из оцинкованной стали и высокопрочной полиэстеровой сети, которая защитит ваших детей от выпадения из окна, а ваш дом от проникновения насекомых.</div>
 
 
-<div class="skidos_head">
-	<div class="acciya">Акция <span>-20%</span></div>
-	<div class="sum">
-			<!--span style="text-transform: none; color:#3C72DC">ко дню Защиты детей!</span><br!-->
-			<strike>24 900</strike> <span style="text-transform: none;">тенге</span><br>
-			<span class="red">19 900 <span style="text-transform: none;">тенге на одно окно </span> </span><br>
-			<!--span style="text-transform: none; color:#3C72DC">Акция действует только до 1 июня!!!</span><br!-->
-	</div>
-
-
-
-	<div class="info-r">До конца акции: </div>
-	<script src="//megatimer.ru/get/20f329ecd0f6806c9b742d5bca01a95b.js"></script>
-
-	<button class="btn btn-order" data-toggle="modal" data-target="#callModalSkidos">Купить со скидкой <span class="btn-arrow-right"><svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span></button>
-</div>
-
-<style>
-
-#header .headline-small { margin-bottom:10px; }
-#header .skidos_head .hrs{ font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 25px; position: relative;  line-height: 30px;}
-#header .skidos_head .hrs span.min{  font-size: 22px; color: #000}
-#header .skidos_head .hrs span{ color:#3C72E3}
-#header .skidos_head .info { font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 20px;}
-#header .skidos_head .zakaz {text-transform: none;; font-size: 20px; line-height: 20px !important; color: #3C72DC; padding-top:10px; position: relative; top:20px;}
-#header .sum.col-md-7 { padding-left: 0  !important;  padding-right: 0  !important; margin-bottom: 10px; margin-top: 10px !important;}
-
-#header .skidos_head .sum {font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 18px;color:#000; display: block; margin-bottom: 10px}
-#header .skidos_head .sum strike {  line-height:22px; color: #000}
-#header .skidos_head .sum span.red { font-size: 26px; color: #ff0000; line-height: 0}
-
-#header .skidos_head .info-r{ font-family: 'TT Norms Bold',sans-serif !important; text-transform: none; font-size: 24px; display: block; margin-bottom:20px;}
-#header .skidos_head button.btn.btn-order { display: block; margin-top: 25px;}
-#header .skidos_head .acciya { font-size: 40px; line-height: 40px; margin-top: 20px; padding-bottom: 0px;display: block;font-family: 'TT Norms Bold',sans-serif; color: #ff0000; text-transform: uppercase;}
-#header .skidos_head .acciya span { font-size: 80px;}
+                    <div class="skidos_head">
+                        <div class="acciya">Акция <span>-20%</span></div>
+                        <div class="sum">
+                                <!--span style="text-transform: none; color:#3C72DC">ко дню Защиты детей!</span><br!-->
+                                <strike>24 900</strike> <span style="text-transform: none;">тенге</span><br>
+                                <span class="red">19 900 <span style="text-transform: none;">тенге на одно окно </span> </span><br>
+                                <!--span style="text-transform: none; color:#3C72DC">Акция действует только до 1 июня!!!</span><br!-->
+                        </div>
 
 
 
-@media screen and (min-width:100px) and (max-width:1024px)
-{
+                        <div class="info-r">До конца акции: </div>
+                        <script src="//megatimer.ru/get/20f329ecd0f6806c9b742d5bca01a95b.js"></script>
 
-	#header .headline-small { margin-bottom:30px; }
-	#header .skidos_head .hrs{ font-size: 20px; line-height: 22px;}
-	#header .skidos_head .info { font-size:16px;}
-	#header .skidos_head .sum {font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 16px;display: block; margin-top: 0px}
-	#header .skidos_head .sum span.red { color: #ff0000; font-size: 22px;}
-	#header .skidos_head .info-r{ font-size:18px; display: block; margin-bottom: 10px;}
-	#header .skidos_head button.btn.btn-order { display: block; margin-top: 15px;}
+                        <button class="btn btn-order" data-toggle="modal" data-target="#callModalSkidos">Купить со скидкой <span class="btn-arrow-right"><svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span></button>
+                    </div>
 
-	#header .skidos_head .zakaz { top:0;}
-	#header .skidos_head .sum.col-md-4 { display:block; text-align:center}
+                    <style>
 
-	#header .skidos_head .acciya { font-size: 22px; line-height: 22px; margin-top: 20px; padding-bottom: 10px;display: block;font-family: 'TT Norms Bold',sans-serif; color: #ff0000; text-transform: uppercase;}
-	#header .skidos_head .acciya span { font-size: 40px;}
+                        #header .headline-small { margin-bottom:10px; }
+                        #header .skidos_head .hrs{ font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 25px; position: relative;  line-height: 30px;}
+                        #header .skidos_head .hrs span.min{  font-size: 22px; color: #000}
+                        #header .skidos_head .hrs span{ color:#3C72E3}
+                        #header .skidos_head .info { font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 20px;}
+                        #header .skidos_head .zakaz {text-transform: none;; font-size: 20px; line-height: 20px !important; color: #3C72DC; padding-top:10px; position: relative; top:20px;}
+                        #header .sum.col-md-7 { padding-left: 0  !important;  padding-right: 0  !important; margin-bottom: 10px; margin-top: 10px !important;}
 
-}
+                        #header .skidos_head .sum {font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 18px;color:#000; display: block; margin-bottom: 10px}
+                        #header .skidos_head .sum strike {  line-height:22px; color: #000}
+                        #header .skidos_head .sum span.red { font-size: 26px; color: #ff0000; line-height: 0}
+
+                        #header .skidos_head .info-r{ font-family: 'TT Norms Bold',sans-serif !important; text-transform: none; font-size: 24px; display: block; margin-bottom:20px;}
+                        #header .skidos_head button.btn.btn-order { display: block; margin-top: 25px;}
+                        #header .skidos_head .acciya { font-size: 40px; line-height: 40px; margin-top: 20px; padding-bottom: 0px;display: block;font-family: 'TT Norms Bold',sans-serif; color: #ff0000; text-transform: uppercase;}
+                        #header .skidos_head .acciya span { font-size: 80px;}
 
 
-</style>
+
+                        @media screen and (min-width:100px) and (max-width:1024px)
+                        {
+                            #header { background-size: cover; }
+
+                            #header .headline-small { margin-bottom:30px; }
+                            #header .skidos_head .hrs{ font-size: 20px; line-height: 22px;}
+                            #header .skidos_head .info { font-size:16px;}
+                            #header .skidos_head .sum {font-family: 'TT Norms Bold',sans-serif !important; text-transform: uppercase; font-size: 16px;display: block; margin-top: 0px}
+                            #header .skidos_head .sum span.red { color: #ff0000; font-size: 22px;}
+                            #header .skidos_head .info-r{ font-size:18px; display: block; margin-bottom: 10px;}
+                            #header .skidos_head button.btn.btn-order { display: block; margin-top: 15px;}
+
+                            #header .skidos_head .zakaz { top:0;}
+                            #header .skidos_head .sum.col-md-4 { display:block; text-align:center}
+
+                            #header .skidos_head .acciya { font-size: 22px; line-height: 22px; margin-top: 20px; padding-bottom: 10px;display: block;font-family: 'TT Norms Bold',sans-serif; color: #ff0000; text-transform: uppercase;}
+                            #header .skidos_head .acciya span { font-size: 40px;}
+
+                        }
 
 
-</div>
-<div class="col-12 col-md-7 col-lg-5">
-<div class="child-photo">
-<img src="./img/images/slider-child-window.png" class="img-fluid" alt="">
-<button class="btn btn-play-icon d-none"></button>
-</div>
-</div>
-</div>
-<!--div class="quote-default"><span class="quote-italic quote-blue">Как защитить ребёнка?</span>Смотри видео!</div>
-<button class="btn btn-watch-video"></button-->
-</div>
+                    </style>
+
+
+            </div>
+            <div class="col-12 col-md-7 col-lg-5 mb-5">
+                <div class="child-photo">
+                    <img src="./img/images/slider-child-window.png" class="img-fluid" alt="">
+                    <button class="btn btn-play-icon d-none"></button>
+                </div>
+            </div>
+        </div>
+    <!--div class="quote-default"><span class="quote-italic quote-blue">Как защитить ребёнка?</span>Смотри видео!</div>
+    <button class="btn btn-watch-video"></button-->
+    </div>
 </div>
 </header>
 
