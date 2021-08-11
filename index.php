@@ -133,24 +133,25 @@ include('./header.php');?>
 
 
 <div class="video-box">
-<div class="leap-1"></div>
-<div class="leap-2 d-none d-xxl-block"></div>
-<div class="wrapper">
+    <div class="leap-1"></div>
+    <div class="leap-2 d-none d-xxl-block"></div>
+    <div class="wrapper">
+        <div class="video-item">
+            <section class="video">
+                    <div class="video-wrapper" id="modal" >
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video class='embed-responsive-item' muted autoplay loop id="index-modal"  poster="/video/about.jpg" class="ty_video_1">
+                            <source src="/video/home.mp4" type="video/mp4" />
+                        </video>
+                        </div>
+                        <div class="video-button" data-id="1">
+                            <div class="mask"><button class="btn btn-play"></button></div>
+                        </div>
+                    </div>
+            </section>
+        </div>
 
-<div class="video-item">
-    <section class="video">
-            <div class="video-wrapper"  id="modal">
-                <video muted autoplay loop id="index-modal"  poster="/video/about.jpg" class="ty_video_1">
-                    <source src="/video/home.mp4" type="video/mp4" />
-                </video>
-                <div class="video-button" data-id="1">
-                    <div class="mask"><button class="btn btn-play"></button></div>
-                </div>
-            </div>
-    </section>
-</div>
-
-</div>
+    </div>
 </div>
 </div>
 </section>
@@ -525,9 +526,11 @@ include('./header.php');?>
 <div class="video-item">
     <section class="video">
             <div class="video-wrapper" id="modal" >
-                <video muted autoplay loop id="index-modal"  poster="/video/razyumovsckiy.jpg" class="ty_video_2">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video class='embed-responsive-item' muted autoplay loop id="index-modal"  poster="/video/razyumovsckiy.jpg" class="ty_video_2">
                     <source src="/video/razyumovsckiy.mp4" type="video/mp4" />
                 </video>
+                </div>
                 <div class="video-button" data-id="2">
                     <div class="mask"><button class="btn btn-play"></button></div>
                 </div>
