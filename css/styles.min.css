@@ -291,6 +291,18 @@ img {
 .btn-order .btn-arrow-right svg {
 	fill: #ffca3d
 }
+.btn-modal {
+	width: 250px;
+	height: 55px;
+	border: 0;
+	background: -webkit-radial-gradient(52.58% 30%, 70.01% 70%, #ffe186 0%, #ffbf1b 100%);
+	background: radial-gradient(70.01% 70% at 52.58% 30%, #ffe186 0%, #ffbf1b 100%);
+	box-shadow: 0 20px 20px rgba(255, 193, 33, .27), 0 3px 0 #ffa011;
+	border-radius: 99px;
+	font-size: 15px;
+	position: relative;
+	font-family: 'TT Norms Bold', sans-serif
+}
 #statistic .quotes-block .leap-1 {
 	background: url(../img/images/work-leap-2.png) no-repeat;
 	width: 258px;
@@ -635,6 +647,13 @@ img {
 	line-height: 28px;
 	padding-bottom: 15px
 }
+.price-form .form-subtitle {
+	font-family: 'TT Norms Bold', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	padding-bottom: 15px;
+	color: #fff;
+}
 .price-form .form-group {
 	position: relative
 }
@@ -669,6 +688,10 @@ img {
 .price-form .btn-order::before {
 	right: 18px;
 	top: 19px
+}
+.price-form .btn-modal {
+	height: 70px;
+	font-size: 16px
 }
 .price-form.form-default {
 	padding: 10px;
@@ -747,6 +770,23 @@ img {
 	width: 90px;
 	height: 155px
 }
+.price-form.form-blue .diagonal svg{
+	transform: rotate(-45deg);
+}
+.price-form.form-blue .btn-more{
+	display: block;
+	width: fit-content;
+	height: 44px;
+	margin: 0 auto;
+	border: 0;
+	background: transparent;
+	color: #fff;
+	font-size: 15px;
+	position: relative;
+	font-family: 'TT Norms Bold', sans-serif;
+	text-decoration: underline;
+}
+
 #footer {
 	padding-top: 40px;
 	padding-bottom: 40px
@@ -1684,7 +1724,7 @@ img {
 		display: block!important
 	}
 	#header {
-		min-height: 815px;
+
 		background-size: cover
 	}
 	#header .navbar-brand {

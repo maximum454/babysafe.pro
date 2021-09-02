@@ -3,77 +3,117 @@ $active_3 = 'active';
 include('./header.php'); ?>
 
 
-<div class="main-slider">
-    <div class="leap-1"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-6 headline-block mb-5 mb-lg-0">
-                <div class="leap-2"></div>
-                <div class="leap-3"></div>
-                <div class="headline headline-big headline-black">Москитные сетки<br/>от <span>baby SAfE</span></div>
-                <div class="headline headline-small">Безопасная антимоскитная сетка BABY SAFE позволит вам спокойно
-                    проветривать дом и обеспечит безопасность вашим детям
-                </div>
-                <button class="btn btn-order" type="button" data-toggle="modal" data-target="#callModalBig">Узнать
-                    подробнее <span class="btn-arrow-right"><svg width="18" height="18"><use
-                                    xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span></button>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="child-photo">
-                    <img src="./img/images/slider-about.png" class="img-fluid" alt="">
-                    <button class="d-none btn btn-play-icon"></button>
-                </div>
-            </div>
-        </div>
-        <!--div class="quote-default"><span class="quote-italic quote-blue">Как защитить ребёнка?</span>Смотри видео!</div>
-        <button class="btn btn-watch-video"></button-->
-    </div>
-</div>
 </header>
 
 
-<section id="about">
+<section id="about" class='mt-5'>
     <div class="block-headline">
         <h2 class="hdr">О компании</h2>
         <div class="hr"></div>
 
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container">
+            <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-12 col-lg-8">
                     <div class="about-text pl-lg-5 pt-lg-5">
-
-                        <p><span class="color">ТОО «Babysafe»</span> – динамично развивающаяся казахстанская компания,
-                            являющаяся изобретателем и правообладателем технологии производства, сборки и установки
-                            защиты на окна от выпадения (безопасной москитной сетки) BabySafe.</p>
-
-                        <p>Миссия нашей компании – обеспечение защиты самого ценного, что у нас есть – наших маленьких
-                            детей, а также любимых домашних питомцев от выпадения из окна.</p>
-
-                        <p>Цель – иметь представителей в каждом городе с населением превышающем 50 тыс. человек.</p>
-
-                        <p>Задача – обеспечить достойную продукцию и сервис, четко контролировать качество работы
-                            каждого регионального партнера и его взаимодействия с конечными клиентами – родителями и
-                            владельцами кошек, т.к. ответственность, которую мы несем очень высока. </p>
-
-                        <p>Принцип работы – воплотить в жизнь лучшие традиции мирового бизнеса.</p>
-
-                        <p>Мы поддерживаем высокие стандарты производства комплектующих из высококлассных материалов,
-                            следим за их своевременной и четкой доставкой и обучаем каждого представителя в регионе
-                            правильной сборке, установке и общению с клиентом.</p>
-
-                        <p>Компания поддерживает режим гибкой ценовой политики, предоставляет рекламные материалы,
-                            осуществляет мощную маркетинговую поддержку каждому партнеру.</p>
-
-                        <p>Благодаря эффективному менеджменту и безупречному исполнению принятых обязательств мы
-                            являемся надежной компанией, которая успешно работает.</p>
-
+                        <p>Для нас очень важно доверие клиентов к&nbsp;нашему продукту. </p>
+                        <p> Поэтому мы&nbsp;регулярно выкладываем отзывы наших реальных клиентов на&nbsp;странице в&nbsp;instagram
+                            (@babysafe.pro) и&nbsp;заручились поддержкой человека, имеющего мировое признание и&nbsp;известность,
+                            являющегося президентом Российской Ассоциации детских хирургов, главным детским хирургом г.&nbsp;Москвы
+                            Разумовского А.Ю.</p>
 
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mb-3">
                     <div class="about-image">
-                        <img src="./img/images/city-bg.jpg" class="img-fluid" alt="">
+                        <img src="./img/images/razyumovsckiy-me.jpeg" class="img-fluid" alt="">
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <section id="we-trust">
+                        <div class="container">
+
+                            <h2 class="hdr">Разумовский А.Ю. о проблеме выпадения из окон </h2>
+                            <div class="hr"></div>
+                            <div class="hdr-gray">Нажми play, чтобы включить звук</div>
+
+
+                            <div class="video-box">
+                                <div class="leap-1"></div>
+                                <div class="leap-2 d-none d-xxl-block"></div>
+                                <div class="wrapper">
+                                    <div class="video-item">
+                                        <section class="video">
+                                            <div class="video-wrapper" id="modal">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <video class='embed-responsive-item' muted autoplay loop
+                                                           id="index-modal" poster="/video/razyumovsckiy.jpg"
+                                                           class="ty_video_1">
+                                                        <source src="/video/razyumovsckiy-3min.mp4" type="video/mp4"/>
+                                                    </video>
+                                                </div>
+                                                <div class="video-button" data-id="1">
+                                                    <div class="mask">
+                                                        <button class="btn btn-play"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="about-text pl-lg-5 pt-lg-5">
+                        <p>Мы&nbsp;представляем динамично развивающуюся компанию, которая является правообладателем
+                            уникальной технологии производства, сборки и&nbsp;установки защиты на&nbsp;окна от&nbsp;выпадения
+                            (безопасной москитной сетки) &laquo;BabySafe&raquo;.<br/>
+                            Наша миссия&nbsp;&mdash; обеспечение защиты самого ценного, что у&nbsp;нас есть&nbsp;&mdash;
+                            наших маленьких детей, а&nbsp;также любимых домашних питомцев от&nbsp;выпадения из&nbsp;окна.<br/>
+                            Мы&nbsp;поддерживаем высокие стандарты производства комплектующих из&nbsp;высококачественных
+                            материалов, следим за&nbsp;их&nbsp;своевременной и&nbsp;четкой доставкой и&nbsp;обучаем
+                            каждого представителя в&nbsp;регионе правильной сборке, установке и&nbsp;общению с&nbsp;клиентом.<br/>
+                            Компания поддерживает режим гибкой ценовой политики, предоставляет рекламные материалы,
+                            осуществляет мощную маркетинговую поддержку каждому партнеру.</p>
+                    </div>
+                    <section id="we-trust">
+                        <div class="container">
+
+                            <h2 class="hdr">Основатель компании <nobr>Алиакбаров Е.К.</nobr> в репортаже для канала <nobr>Хабар 24</nobr> </h2>
+                            <div class="hr"></div>
+                            <div class="hdr-gray">Нажми play, чтобы включить звук</div>
+
+
+                            <div class="video-box">
+                                <div class="leap-1"></div>
+                                <div class="leap-2 d-none d-xxl-block"></div>
+                                <div class="wrapper">
+                                    <div class="video-item">
+                                        <section class="video">
+                                            <div class="video-wrapper" id="modal">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <video class='embed-responsive-item' muted autoplay loop
+                                                           id="index-modal" poster="/video/about.jpg"
+                                                           class="ty_video_2">
+                                                        <source src="/video/habar.mp4" type="video/mp4"/>
+                                                    </video>
+                                                </div>
+                                                <div class="video-button" data-id="2">
+                                                    <div class="mask">
+                                                        <button class="btn btn-play"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
