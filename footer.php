@@ -394,9 +394,7 @@
                             <input type="text" name="adress" placeholder="Ваш адрес" class="form-control"
                                    id="blue-adress">
                         </div>
-                        <p class="price-form">Общая стоимость: 56 700 тенге**</p>
-                        <div class="form-info">*точная стоимость станет известна только после профессионального замера
-                        </div>
+                        <p class="price-form__itog">Общая стоимость: <span>56 700</span> тенге</p>
                         <div class="text-center status">
                             <button type="submit" class="btn btn-order">Оплатить <span
                                         class="btn-arrow-right"><svg width="18" height="18"><use
