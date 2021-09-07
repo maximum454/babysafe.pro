@@ -459,6 +459,7 @@
                 <li class="nav-item"><a href="/partnership.php" class="nav-link">Условия сотрудничества</a></li>
                 <li class="nav-item"><a href="/regions.php" class="nav-link">Представители в регионах</a></li>
                 <li class="nav-item"><a href="/blog.php" class="nav-link">Блог</a></li>
+                <li class="nav-item"><a href="/payments.php" class="nav-link">Платежи</a></li>
             </ul>
         </nav>
         <div class="social d-flex ml-md-auto ml-lg-0 justify-content-center justify-content-md-end">
@@ -482,6 +483,7 @@
         crossorigin="anonymous"></script>
 <script src="./js/main.js"></script>
 <script src="/js/app.js"></script>
+<script src="/js/calc.js"></script>
 
 
 <script src="/js/extras.js"></script>

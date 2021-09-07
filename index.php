@@ -731,8 +731,8 @@ include('./header.php'); ?>
             1000 тенге за каждое окно</div>
 
         <div class="row">
-            <div class="col-12 text-center">
-                <div class="window">
+            <div class="col-12 text-center p-5">
+                <div class="">
                     <img src="./img/images/wind1.png" alt="">
                 </div>
                 <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#priceModal">Получить скидку 1000 тенге </button>
