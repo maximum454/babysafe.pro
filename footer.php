@@ -245,26 +245,61 @@
 </div>
 <!-- Получить консультацию  шапка  !-->
 
+
 <!-- Замер и оплата  !-->
 <div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <form action="" class="price-form form-blue" method="POST" id="price-form">
-                    <input type="hidden" name="subject" value="Оценка стоимости">
+                <form action="" class="price-form form-blue" method="POST" id="price-form-order">
+                    <input type="hidden" name="subject" value="оплата">
                     <div class="mask">
                         <div class="form-headline text-center">Заполните данные ниже</div>
                         <div class="leap-1"></div>
                         <div class="leap-2"></div>
-                        <!--div class="form-group">
+
+
+                            <fieldset id="step1" class="step1" data-window='1'>
+                                <div class="form-group">
+                                    <label for="width1" class="form-icon">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
+                                        </svg>
+                                    </label>
+                                    <input id="width1" type="number" name="width1" placeholder="Ширина окна (см)" class="form-control calc">
+                                </div>
+                                <div class="form-group">
+                                    <label for="height1" class="form-icon">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                        </svg>
+                                    </label>
+                                    <input id="height1" type="number" name="height1" placeholder="Высота окна (см) " class="form-control calc">
+                                </div>
+                                <div class="form-group">
+                                    <label for="diagonal1" class="form-icon diagonal">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                        </svg>
+                                    </label>
+                                    <input id="diagonal1" type="number" name="diagonal1" placeholder="Диагональ окна (см) " class="form-control calc">
+                                </div>
+                                <!--*калькулятор должен по формуле Пифагора вычислять правильное значение диагонали и в случае расхождения указанного значения более чем на 2 см в большую или меньшую сторону, писать красным цветом: -->
+                                <div class="form-error d-none text-danger">Одно из значений указано неверно! Пожалуйста, измерьте окно снова и укажите верные данные</div>
+                                <button type="button" class="btn btn-more">Еще окно</button>
+                            </fieldset>
+
+
+
+                        <br>
+                        <div class="form-group">
                             <label for="blue-city" class="form-icon">
                                 <svg width="20" height="20">
                                     <use xlink:href="./img/svg/symbol/sprite.svg#map"></use>
                                 </svg>
                             </label>
-                            <select type="text" name="city" placeholder="Выберите город"
-                                    class="form-control custom-select" id="blue-city">
+                            <select type="text" name="city" placeholder="Выберите город" class="form-control custom-select" id="order-city">
                                 <option value="Нур Султан">Нур Султан</option>
                                 <option value="Алматы">Алматы</option>
                                 <option value="Шымкент">Шымкент</option>
@@ -274,116 +309,14 @@
                                 <option value="Актобе">Актобе</option>
                                 <option value="Атырау">Атырау</option>
                             </select>
-                        </div-->
-                        <div class="step1">
-                            <div class="form-group">
-                                <label for="blue-width" class="form-icon">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="width" placeholder="Ширина окна (см)" class="form-control"
-                                       id="blue-width">
-                            </div>
-                            <div class="form-group">
-                                <label for="blue-height" class="form-icon">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="height" placeholder="Высота окна (см) " class="form-control"
-                                       id="blue-height">
-                            </div>
-                            <div class="form-group">
-                                <label for="blue-diagonal" class="form-icon diagonal">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="diagonal" placeholder="Диагональ окна (см) "
-                                       class="form-control"
-                                       id="blue-diagonal">
-                            </div>
-                            <button type="button" class="btn btn-more">Еще окно</button>
                         </div>
-
-                        <div class="step2 d-none">
-                            <div class="form-headline text-center">Окно 2</div>
-
-                            <div class="form-group">
-                                <label for="blue-width2" class="form-icon">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="width2" placeholder="Ширина окна (см)" class="form-control"
-                                       id="blue-width2">
-                            </div>
-                            <div class="form-group">
-                                <label for="blue-height2" class="form-icon">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="height2" placeholder="Высота окна (см) " class="form-control"
-                                       id="blue-height2">
-                            </div>
-                            <div class="form-group">
-                                <label for="blue-diagonal2" class="form-icon diagonal">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="diagonal2" placeholder="Диагональ окна (см) "
-                                       class="form-control"
-                                       id="blue-diagonal2">
-                            </div>
-                            <button type="button" class="btn btn-more">Еще окно</button>
-                        </div>
-
-                        <div class="step3 d-none">
-                            <div class="form-headline text-center">Окно 2</div>
-
-                            <div class="form-group">
-                                <label for="blue-width2" class="form-icon">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="width2" placeholder="Ширина окна (см)" class="form-control"
-                                       id="blue-width2">
-                            </div>
-                            <div class="form-group">
-                                <label for="blue-height2" class="form-icon">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="height2" placeholder="Высота окна (см) " class="form-control"
-                                       id="blue-height2">
-                            </div>
-                            <div class="form-group">
-                                <label for="blue-diagonal2" class="form-icon diagonal">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                    </svg>
-                                </label>
-                                <input type="text" name="diagonal2" placeholder="Диагональ окна (см) "
-                                       class="form-control"
-                                       id="blue-diagonal2">
-                            </div>
-                            <button type="button" class="btn btn-more">Еще окно</button>
-                        </div>
-
-                        <br>
                         <div class="form-group">
                             <label for="blue-phone" class="form-icon">
                                 <svg width="20" height="20">
                                     <use xlink:href="./img/svg/symbol/sprite.svg#phone"></use>
                                 </svg>
                             </label>
-                            <input type="text" name="phone" placeholder="Ваш телефон" class="form-control"
-                                   id="blue-phone">
+                            <input type="text" name="phone" placeholder="Ваш телефон" class="form-control" id="order-phone">
                         </div>
                         <div class="form-group">
                             <label for="blue-adress" class="form-icon">
@@ -391,14 +324,14 @@
                                     <use xlink:href="./img/svg/symbol/sprite.svg#map"></use>
                                 </svg>
                             </label>
-                            <input type="text" name="adress" placeholder="Ваш адрес" class="form-control"
-                                   id="blue-adress">
+                            <input type="text" name="adress" placeholder="Ваш адрес" class="form-control" id="order-adress">
                         </div>
-                        <p class="price-form__itog">Общая стоимость: <span>56 700</span> тенге</p>
-                        <div class="text-center status">
-                            <button type="submit" class="btn btn-order">Оплатить <span
-                                        class="btn-arrow-right"><svg width="18" height="18"><use
-                                                xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span>
+                        <p class="price-form__itog">Общая стоимость: <span id="itog">56 700</span> тенге</p>
+                        <div class="text-center">
+                            <button id="order-btn" type="button" class="btn btn-order">Оплатить
+                                <span class="btn-arrow-right">
+                                    <svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg>
+                                </span>
                             </button>
                         </div>
 
@@ -421,8 +354,6 @@
         </div>
     </div>
 </div>
-<!-- Замер и оплата  !-->
-
 
 <footer id="footer" class="pl-lg-4 pr-lg-4">
     <div class="container-fluid d-md-flex align-items-center">
@@ -464,11 +395,22 @@
         </nav>
         <div class="social d-flex ml-md-auto ml-lg-0 justify-content-center justify-content-md-end">
             <!--div class="social-item mr-3"><a href="https://business.facebook.com/Babysafekz-1825015617606705"><svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#fb"></use></svg></a></div!-->
-            <div class="social-item"><a href="https://www.instagram.com/babysafe.pro/">
+            <div class="social-item">
+                <a href="https://www.instagram.com/babysafe.pro/" target="_blank">
                     <svg width="18" height="18">
                         <use xlink:href="./img/svg/symbol/sprite.svg#in"></use>
                     </svg>
-                </a></div>
+                </a>
+            </div>
+            <div class="social-item ml-1">
+                <a href="https://www.youtube.com/channel/UC5ATXpHFpO4jH2kuS_JS18w" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="-35.20005 -41.33325 305.0671 247.9995">
+                        <path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85"
+                              fill="red"/>
+                        <path d="M93.333 117.559l61.333-34.89-61.333-34.894z" fill="#fff"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 </footer>
@@ -486,12 +428,40 @@
 <script src="/js/calc.js"></script>
 
 
+
 <script src="/js/extras.js"></script>
 <script src="/js/jquery.inputmask.bundle.js"></script>
 
 
 <script>
-
+    this.pay = function (summa) {
+        var widget = new cp.CloudPayments();
+        widget.pay('auth', // или 'charge'
+            { //options
+                publicId: 'pk_2b869ea9d04943323e2f425f0b6f8', //id из личного кабинета
+                description: 'Оплата товаров в babysafe.pro', //назначение
+                amount: summa, //сумма
+                currency: 'KZT', //валюта
+                skin: "mini", //дизайн виджета (необязательно)
+                data: {
+                    myProp: 'myProp value'
+                }
+            },
+            {
+                onSuccess: function (options) { // success
+                    //действие при успешной оплате
+                    console.log('оплата прошла')
+                },
+                onFail: function (reason, options) { // fail
+                    //действие при неуспешной оплате
+                    console.log('оплата не прошла')
+                },
+                onComplete: function (paymentResult, options) { //Вызывается как только виджет получает от api.cloudpayments ответ с результатом транзакции.
+                    //например вызов вашей аналитики Facebook Pixel
+                }
+            }
+        )
+    };
     $('#phone, #blue-phone').inputmask("+7-999-999-99-99");
 
 
@@ -671,6 +641,41 @@
         e.preventDefault();
     });
 
+    //Синий блок оплата
+    $(document).on('click', 'form.price-form.form-blue .zakaz_data', function (e) {
+        var city = $('form.price-form.form-blue #order-city').val();
+        var width  	=  	$('form.price-form.form-blue #blue-width').val();
+        var name  	=  	$('form.price-form.form-blue #blue-name').val();
+        var phone = $('form.price-form.form-blue #blue-phone').val();
+        var buttom = '<button type="submit" class="btn btn-order zakaz_data">Купить со скидкой <span class="btn-arrow-right"><svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span></button>';
+
+        $.ajax
+        ({
+            url: "/send.php",
+            type: "POST",
+            data: {"city": city, "phone": phone, "type": "zakaz_data"},
+            cache: true,
+            beforeSend: function () {
+                $('form.price-form.form-blue #blue-city').prop('disabled', true);
+                $('form.price-form.form-blue #blue-phone').prop('disabled', true);
+                $('form.price-form.form-blue .text-center.status').html(buttom);
+            },
+            success: function (response) {
+                if (response == 0) {
+                    $('form.price-form.form-blue .text-center.status').html('<span style="color:#FF0000"  class="error_text">Заполните все поля</span>' + buttom);
+                } else {
+                    setTimeout(function () {
+                        location.href = '/thankyoupage/';
+                    }, 900);
+                }
+
+                $('form.price-form.form-blue #blue-city').prop('disabled', false);
+                $('form.price-form.form-blue #blue-phone').prop('disabled', false);
+            }
+        });
+        e.preventDefault();
+    });
+
     //Низ сайта ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
     $(document).on('click', 'form.price-form.form-default .zakaz_data_foot', function (e) {
         var city = $('form.price-form.form-default #blue-city').val();
@@ -703,6 +708,7 @@
         });
         e.preventDefault();
     });
+
 
     $(document).on('click', '.callModalPartnership', function (e) {
         var direction = $(this).attr('data-direction');

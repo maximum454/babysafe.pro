@@ -30,7 +30,7 @@ img.logo  { width:160px; margin:0px 30px}
 .main-slider{ margin-top:75px !important;}
 
 .telephone.mobi { display:none}
-.modal-open .modal { z-index:10002}
+.modal-open .modal { z-index:150}
 #ws-ps { display: none; }
 
 h2.hdr {color: #1e2c46; text-transform:uppercase;font-family: 'TT Norms ExtraBold', sans-serif;font-size: 25px; line-height:25px; text-align: center;display:block; width:100%;}

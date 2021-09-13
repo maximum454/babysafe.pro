@@ -32,6 +32,8 @@ else
     <link rel="stylesheet" href="/css/plyr.css?att=<?= time(); ?>">
     <link rel="stylesheet" href="/css/app.css?att=<?= time(); ?>">
 
+    <!--Платежная система -->
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -113,7 +115,7 @@ else
         }
     }
 </style>
-<a href="https://api.whatsapp.com/send?phone=+77774748494" target="_blank" title="Написать в Whatsapp"
+<a href="https://api.whatsapp.com/send?phone=+77767061010" target="_blank" title="Написать в Whatsapp"
    rel="noopener noreferrer">
     <div class="whatsapp-button"><i class="fa fa-whatsapp"></i></div>
 </a>
@@ -184,7 +186,7 @@ else
 </li!-->
                 </ul>
                 <div class="form-inline my-2 my-lg-0">
-                    <div class="telephone"><a href="tel:+77774748494">8 777 474 84 94</a></div>
+                    <div class="telephone"><a href="tel:+77767061010">8 776 706 10 10</a></div>
                     <button class="btn btn-call my-2 my-sm-0" type="button" data-toggle="modal"
                             data-target="#callModal">Обратный звонок
                     </button>

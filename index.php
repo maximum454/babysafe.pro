@@ -387,12 +387,9 @@ include('./header.php'); ?>
 
                         <!--div class="form-info">*точная стоимость станет известна только после профессионального замера</div!-->
                         <div class="text-center status">
-                            <button type="submit" class="btn btn-order zakaz_data">Купить со скидкой <span
-                                        class="btn-arrow-right"><svg width="18" height="18"><use
-                                                xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span>
+                            <button type="submit" class="btn btn-order zakaz_data">Купить со скидкой
+                                <span class="btn-arrow-right"><svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span>
                             </button>
-
-
                         </div>
                         <!--div class="row">
                             <div class="col-lg-12">
@@ -721,8 +718,8 @@ include('./header.php'); ?>
         </div>
     </div>
 </section>
-
-<section id="price" class="pb-md-5 pb-lg-0">
+<?php if ($_REQUEST['key'] == 'price') : ?>
+<section id="price-order" class="pb-md-5 pb-lg-0">
     <div class="container">
         <h2 class="hdr">Самостоятельно сделайте замер
         </h2>
@@ -741,7 +738,7 @@ include('./header.php'); ?>
         </div>
     </div>
 </section>
-
+<?php endif;?>
 <section id="features">
     <div class="container">
         <h2 class="hdr">ПРЕИМУЩЕСТВА безопасных москитных сеток <span class="blue">BABYSAFE</span></h2>

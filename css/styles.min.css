@@ -559,6 +559,11 @@ img {
 	padding: 30px 0;
 	margin-bottom:20px ;
 }
+#price-order {
+	background: url(../img/images/price-bg.jpg) repeat-x center top;
+	padding: 30px 0;
+	margin-bottom:20px ;
+}
 #how-we-work {
 	padding: 30px 0;
 	margin-bottom:20px;

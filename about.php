@@ -82,7 +82,7 @@ include('./header.php'); ?>
                     <section id="we-trust">
                         <div class="container">
 
-                            <h2 class="hdr">Основатель компании <nobr>Алиакбаров Е.К.</nobr> в репортаже для канала <nobr>Хабар 24</nobr> </h2>
+                            <h2 class="hdr">Репортаж для канала <nobr>Хабар 24</nobr> </h2>
                             <div class="hr"></div>
                             <div class="hdr-gray">Нажми play, чтобы включить звук</div>
 
@@ -123,7 +123,7 @@ include('./header.php'); ?>
 <section id="solutions">
     <div class="container">
 
-        <h2 class="hdr d-none d-lg-block">ОТЛИЧИЯ <span class="blue">BABYSAFE</span> от других идов защиты на окна</h2>
+        <h2 class="hdr d-none d-lg-block">ОТЛИЧИЯ <span class="blue">BABYSAFE</span> от других видов защиты на окна</h2>
         <div class="hr d-none d-lg-block"></div>
         <div class="hdr-gray d-none d-lg-block">BabySafe - самое универсальное решение</div>
 
