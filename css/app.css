@@ -1,194 +1,573 @@
-.navbar-brand { padding:0  !important}
-.video{}
-.video-button{width:64px;height:64px;position:absolute;top: auto;left:10px; bottom:20px	;margin-top:-32px;margin-left:20px;font-size:64px;color:#fff;-webkit-transition:color .5s ease;transition:color .5s ease;cursor:pointer;z-index:10}
-.video-button:hover{color:#0380fb}
-.video-wrapper,.video-wrapper video{width:100%;position:relative}
+.navbar-brand {
+    padding: 0 !important
+}
 
+.video {
+}
 
-.video-wrapper video{height:auto}
-.video-wrapper:before{content:"";position:absolute;width:100%;height:100%;top:0;right:0;left:0;bottom:0;background-color:rgba(0,0,0,.5);z-index:1; opacity:0.5}
- .hidden { display:none !important}
-.video-button .mask{ background:none !important; }
-.video-button .mask .btn-play{ left:0px !important; top:-40% !important}
+.video-button {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: auto;
+    left: 10px;
+    bottom: 20px;
+    margin-top: -32px;
+    margin-left: 20px;
+    font-size: 64px;
+    color: #fff;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+    cursor: pointer;
+    z-index: 10
+}
 
-#we-trust .video-box { width:100% !important; margin:0 auto}
+.video-button:hover {
+    color: #0380fb
+}
 
-#child-secure .video-box .video-item .mask .btn-play, #we-trust .video-box .video-item .mask .btn-play { width:230px; height:230px; margin-left:-105px; margin-top:-42px;} 
-
-#solutions .table-solutions tbody .td-success img { width:70%; margin:0 auto; border-radius:5%; }
-#solutions .table-solutions tbody .td-error img { width:70%; margin:0 auto; border-radius:5%;}
-
-#solutions .table-solutions tbody .td-success.none  {  background:none}
-#solutions .table-solutions tbody .td-error  { background:none}
-
-
-#header .navbar { position:fixed; background:#F8F9FA !important;  top:0; left:0; z-index:100; width:100%; }
-#header .nav-block { margin-top:0}
-
-img.logo  { width:160px; margin:0px 30px}
-
-.main-slider{ margin-top:75px !important;}
-
-.telephone.mobi { display:none}
-.modal-open .modal { z-index:150}
-#ws-ps { display: none; }
-
-h2.hdr {color: #1e2c46; text-transform:uppercase;font-family: 'TT Norms ExtraBold', sans-serif;font-size: 25px; line-height:25px; text-align: center;display:block; width:100%;}
-h2.hdr-grey {color: #C5C5C5; text-transform:uppercase;font-family: 'TT Norms ExtraBold', sans-serif;font-size: 22px; line-height:25px; text-align: center;display:block; width:100%;}
-h2.hdr span.blue { color:#3C72DC}
-.hr { text-align: center; display:block; width:100%; margin:10px auto; width:45px; height:3px; background:#3C72DC}
-.hr.no-text { margin-bottom:14px;}
-
-.hdr-gray { text-align: center; display:block; width:100%; margin:0 auto;font-size: 18px !important; color: #898989; margin:10px 0; margin-top:7px; }
-
- #reviews { padding-top:20px;}
- 
-	#price .window {  padding-top:100px;}
-	#price .window.cat {  padding-top:0px;}
-	
-@media screen and (min-width:100px) and (max-width:1024px) 
-{
-	
-	#price .window { text-align:center !important; padding-top:0px; padding-bottom:30px;}
-	#price .window.cat { text-align:center !important; padding-top:0px; padding-bottom:0px;}
-	
-	h2.hdr {font-size:18px; line-height:20px;}
-	.hr {margin:8px auto; }
-	.hr.no-text { margin-bottom:12px;}
-	.hdr-gray { font-size:15px !important; line-height:18px; }
-	h2.hdr-grey { font-size:15px; line-height:17px}
-
-
-	.quotes-block.d-md-flex.d-none.d-lg-block { display:none !important}
-	.main-slider {    margin-top: 60px !important; padding-top:15px;}
-	#header .main-slider .headline-big { line-height:22px; padding-bottom:10px;font-family: 'TT Norms ExtraBold',sans-serif; font-size:22px; }
-
-	.mobile-logo { width:100%; left:0; top:0; position:absolute; background:#F8F9FA; margin-left:0 !important; height:60px; text-align:center}
-	.mobile-logo img{ padding-top:11px; width:220px}
-	
-	#header .navbar-toggler { z-index:1000; margin-top:10px;}
-	.telephone.mobi{ position:absolute; right:0; top:14px; display:inline-block}
-
-	.video-button { left: 5px; top: auto;bottom:5px; margin-left:-32px;}
-	#child-secure .video-box .video-item .mask .btn-play, #we-trust .video-box .video-item .mask .btn-play { width:210px; height:210px; margin:0; margin-top:-46px; margin-left:-39px; }
-
-	#statistic { padding:30px 0}
-	#statistic .block-default-headline { font-size:18px; padding-top:30px; line-height:20px; padding-bottom:8px; margin-bottom:5px;}
-	#statistic .block-headline { margin-bottom:10px;}
-	#header .main-slider .headline-small { font-size:14px; line-height:20px;}
-	#we-trust .video-box { padding:5px;}
-	
-	#we-trust { padding:20px 0;}
-	#we-trust .block-default-headline { font-size:18px; padding-top:0px; line-height:20px; padding-bottom:12px; margin-bottom:15px;}
-	#we-trust .block-headline { margin-bottom:5px;}
-	#we-trust .block-additional-headline { font-size:14px; line-height:16px; margin-bottom:20px;}
-	#we-trust .block-default-headline { margin-bottom:8px;}
-	
-	#ws-ps { display:block; width:100%; text-align:center; padding:20px 0;}
-	#ws-ps button{ margin:0 auto; width:300px;}
-
-	
-	#solutions { padding:20px 0;}
-	#solutions .block-headline { margin-bottom:0px;}
-	#solutions .table-solutions thead th, #solutions .table-solutions tbody td { line-height:18px; padding:0}
-	
-	#features { padding:20px 0;}
-	#features .block-default-headline { font-size:18px; padding-top:20px; line-height:20px; padding-bottom:10px; margin-bottom:5px;}
-	#features .block-headline { margin-bottom:0px;}
-
-	#price { padding:20px 0;}
-	#price .block-default-headline { font-size:18px; padding-top:20px; line-height:20px; padding-bottom:10px; margin-bottom:5px;}
-	#price .block-headline { margin-bottom:0px;}
-
-	#how-we-work { padding:20px 0;}
-	#how-we-work .block-default-headline { font-size:18px; padding-top:20px; line-height:20px; padding-bottom:10px; margin-bottom:5px;}
-	#how-we-work .block-headline { margin-bottom:0px;}
-
-	#order { padding-bottom:0 !important; margin-top:0; margin-bottom:20px;}
-	#order .block-default-headline { font-size:18px; padding-top:20px; line-height:20px; padding-bottom:10px; margin-bottom:5px;}
-	#order .block-headline { margin-bottom:0px;}
-	
-	#order.default { padding:20px 0;}
-
-
-.features-items  { vertical-align:top; position: relative; top:-20px;}
-
-.work-items.row .col-12 { vertical-align:top; position: relative; top:-20px;}
-.price-form .form-info { line-height:16px;}
-
-
-
-#order .block-additional-headline { margin-bottom:10px;}
-	
+.video-wrapper, .video-wrapper video {
+    width: 100%;
+    position: relative
 }
 
 
+.video-wrapper video {
+    height: auto
+}
 
-#timer20f329ecd0f6806c9b742d5bca01a95b { margin:  0 !important; left: -20px !important; position: relative; margin-bottom: 10px !important; height: auto !important}
-#timer20f329ecd0f6806c9b742d5bca01a95b .timer-separator { display:none !important}
+.video-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+    opacity: 0.5
+}
+
+.hidden {
+    display: none !important
+}
+
+.video-button .mask {
+    background: none !important;
+}
+
+.video-button .mask .btn-play {
+    left: 0px !important;
+    top: -40% !important
+}
+
+#we-trust .video-box {
+    width: 100% !important;
+    margin: 0 auto
+}
+
+#child-secure .video-box .video-item .mask .btn-play, #we-trust .video-box .video-item .mask .btn-play {
+    width: 230px;
+    height: 230px;
+    margin-left: -105px;
+    margin-top: -42px;
+}
+
+#solutions .table-solutions tbody .td-success img {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+#solutions .table-solutions tbody .td-error img {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+#solutions .table-solutions tbody .td-success.none {
+    background: none
+}
+
+#solutions .table-solutions tbody .td-error {
+    background: none
+}
+
+
+#header .navbar {
+    position: fixed;
+    background: #F8F9FA !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+#header .nav-block {
+    margin-top: 0
+}
+
+img.logo {
+    width: 160px;
+    margin: 0px 30px
+}
+
+.main-slider {
+    margin-top: 75px !important;
+}
+
+.telephone.mobi {
+    display: none
+}
+
+#ws-ps {
+    display: none;
+}
+
+h2.hdr {
+    color: #1e2c46;
+    text-transform: uppercase;
+    font-family: 'TT Norms ExtraBold', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+h2.hdr-grey {
+    color: #C5C5C5;
+    text-transform: uppercase;
+    font-family: 'TT Norms ExtraBold', sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+h2.hdr span.blue {
+    color: #3C72DC
+}
+
+.hr {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    width: 45px;
+    height: 3px;
+    background: #3C72DC
+}
+
+.hr.no-text {
+    margin-bottom: 14px;
+}
+
+.hdr-gray {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px !important;
+    color: #898989;
+    margin: 10px 0;
+    margin-top: 7px;
+}
+
+#reviews {
+    padding-top: 20px;
+}
+
+#price .window {
+    padding-top: 100px;
+}
+
+#price .window.cat {
+    padding-top: 0px;
+}
+
+#price-form-order .disabled{
+	pointer-events: none;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1024px) {
+
+    #price .window {
+        text-align: center !important;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    #price .window.cat {
+        text-align: center !important;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    h2.hdr {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .hr {
+        margin: 8px auto;
+    }
+
+    .hr.no-text {
+        margin-bottom: 12px;
+    }
+
+    .hdr-gray {
+        font-size: 15px !important;
+        line-height: 18px;
+    }
+
+    h2.hdr-grey {
+        font-size: 15px;
+        line-height: 17px
+    }
+
+
+    .quotes-block.d-md-flex.d-none.d-lg-block {
+        display: none !important
+    }
+
+    .main-slider {
+        margin-top: 60px !important;
+        padding-top: 15px;
+    }
+
+    #header .main-slider .headline-big {
+        line-height: 22px;
+        padding-bottom: 10px;
+        font-family: 'TT Norms ExtraBold', sans-serif;
+        font-size: 22px;
+    }
+
+    .mobile-logo {
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: #F8F9FA;
+        margin-left: 0 !important;
+        height: 60px;
+        text-align: center
+    }
+
+    .mobile-logo img {
+        padding-top: 11px;
+        width: 220px
+    }
+
+    #header .navbar-toggler {
+        z-index: 1000;
+        margin-top: 10px;
+    }
+
+    .telephone.mobi {
+        position: absolute;
+        right: 0;
+        top: 14px;
+        display: inline-block
+    }
+
+    .video-button {
+        left: 5px;
+        top: auto;
+        bottom: 5px;
+        margin-left: -32px;
+    }
+
+    #child-secure .video-box .video-item .mask .btn-play, #we-trust .video-box .video-item .mask .btn-play {
+        width: 210px;
+        height: 210px;
+        margin: 0;
+        margin-top: -46px;
+        margin-left: -39px;
+    }
+
+    #statistic {
+        padding: 30px 0
+    }
+
+    #statistic .block-default-headline {
+        font-size: 18px;
+        padding-top: 30px;
+        line-height: 20px;
+        padding-bottom: 8px;
+        margin-bottom: 5px;
+    }
+
+    #statistic .block-headline {
+        margin-bottom: 10px;
+    }
+
+    #header .main-slider .headline-small {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #we-trust .video-box {
+        padding: 5px;
+    }
+
+    #we-trust {
+        padding: 20px 0;
+    }
+
+    #we-trust .block-default-headline {
+        font-size: 18px;
+        padding-top: 0px;
+        line-height: 20px;
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+    }
+
+    #we-trust .block-headline {
+        margin-bottom: 5px;
+    }
+
+    #we-trust .block-additional-headline {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+    #we-trust .block-default-headline {
+        margin-bottom: 8px;
+    }
+
+    #ws-ps {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #ws-ps button {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+
+    #solutions {
+        padding: 20px 0;
+    }
+
+    #solutions .block-headline {
+        margin-bottom: 0px;
+    }
+
+    #solutions .table-solutions thead th, #solutions .table-solutions tbody td {
+        line-height: 18px;
+        padding: 0
+    }
+
+    #features {
+        padding: 20px 0;
+    }
+
+    #features .block-default-headline {
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    #features .block-headline {
+        margin-bottom: 0px;
+    }
+
+    #price {
+        padding: 20px 0;
+    }
+
+    #price .block-default-headline {
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    #price .block-headline {
+        margin-bottom: 0px;
+    }
+
+    #how-we-work {
+        padding: 20px 0;
+    }
+
+    #how-we-work .block-default-headline {
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    #how-we-work .block-headline {
+        margin-bottom: 0px;
+    }
+
+    #order {
+        padding-bottom: 0 !important;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #order .block-default-headline {
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    #order .block-headline {
+        margin-bottom: 0px;
+    }
+
+    #order.default {
+        padding: 20px 0;
+    }
+
+
+    .features-items {
+        vertical-align: top;
+        position: relative;
+        top: -20px;
+    }
+
+    .work-items.row .col-12 {
+        vertical-align: top;
+        position: relative;
+        top: -20px;
+    }
+
+    .price-form .form-info {
+        line-height: 16px;
+    }
+
+
+    #order .block-additional-headline {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+#timer20f329ecd0f6806c9b742d5bca01a95b {
+    margin: 0 !important;
+    left: -20px !important;
+    position: relative;
+    margin-bottom: 10px !important;
+    height: auto !important
+}
+
+#timer20f329ecd0f6806c9b742d5bca01a95b .timer-separator {
+    display: none !important
+}
 
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b-hours,
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b-minutes,
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b-secundes,
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b-days,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b-hours,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b-minutes,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b-secundes,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b-days {
+    font-family: 'TT Norms ExtraBold', sans-serif !important;
+    color: #000 !important;
+    font-size: 28px;
+}
 
 #timer-text-20f329ecd0f6806c9b742d5bca01a95b-hours,
 #timer-text-20f329ecd0f6806c9b742d5bca01a95b-minutes,
 #timer-text-20f329ecd0f6806c9b742d5bca01a95b-secundes,
-#timer-text-20f329ecd0f6806c9b742d5bca01a95b-days
- {	font-family: 'TT Norms ExtraBold',sans-serif !important;	color: #000 !important; font-size:28px;}
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b-days {
+    font-family: 'TT Norms', sans-serif !important;
+    color: #000 !important;
+    font-size: 18px !important;
+}
 
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b-hours,
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b-minutes,
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b-secundes,
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b-days
-  {	font-family: 'TT Norms',sans-serif !important;	color: #000 !important; font-size: 18px !important;}
-#timer20f329ecd0f6806c9b742d5bca01a95b .timer-element { width: 20px !important; padding: 0; margin: 0;}
+#timer20f329ecd0f6806c9b742d5bca01a95b .timer-element {
+    width: 20px !important;
+    padding: 0;
+    margin: 0;
+}
 
 #timer-number-20f329ecd0f6806c9b742d5bca01a95b-minutes,
 #timer-number-20f329ecd0f6806c9b742d5bca01a95b-secundes,
 #timer-number-20f329ecd0f6806c9b742d5bca01a95b-hours,
-#timer-number-20f329ecd0f6806c9b742d5bca01a95b-days { font-size: 0 !important}
-
+#timer-number-20f329ecd0f6806c9b742d5bca01a95b-days {
+    font-size: 0 !important
+}
 
 
 /* Центр сайта */
 
-#timer20f329ecd0f6806c9b742d5bca01a95b0 { margin:  0 auto;}
+#timer20f329ecd0f6806c9b742d5bca01a95b0 {
+    margin: 0 auto;
+}
+
 #timer20f329ecd0f6806c9b742d5bca01a95b0.timer-separator,
-#timer20f329ecd0f6806c9b742d5bca01a95b0 canvas { display:none !important}
+#timer20f329ecd0f6806c9b742d5bca01a95b0 canvas {
+    display: none !important
+}
 
 
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b0-hours,
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b0-minutes,
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b0-secundes,
 #timer-number-value-20f329ecd0f6806c9b742d5bca01a95b0-days,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b0-hours,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b0-minutes,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b0-secundes,
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b0-days {
+    font-family: 'TT Norms ExtraBold', sans-serif !important;
+    color: red !important;
+    font-size: 28px;
+}
 
 #timer-text-20f329ecd0f6806c9b742d5bca01a95b0-hours,
 #timer-text-20f329ecd0f6806c9b742d5bca01a95b0-minutes,
 #timer-text-20f329ecd0f6806c9b742d5bca01a95b0-secundes,
-#timer-text-20f329ecd0f6806c9b742d5bca01a95b0-days
- {	font-family: 'TT Norms ExtraBold',sans-serif !important;	color: red !important; font-size:28px;}
+#timer-text-20f329ecd0f6806c9b742d5bca01a95b0-days {
+    font-family: 'TT Norms', sans-serif !important;
+    color: #000 !important;
+    font-size: 18px !important;
+}
 
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b0-hours,
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b0-minutes,
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b0-secundes,
- #timer-text-20f329ecd0f6806c9b742d5bca01a95b0-days
-  {	font-family: 'TT Norms',sans-serif !important;	color: #000 !important; font-size: 18px !important;}
-#timer0501040529d24dafbd21d4cd8d8242260 .timer-element { width: 20px !important; padding: 0; margin: 0;}
+#timer0501040529d24dafbd21d4cd8d8242260 .timer-element {
+    width: 20px !important;
+    padding: 0;
+    margin: 0;
+}
 
 #timer-number-20f329ecd0f6806c9b742d5bca01a95b0-minutes,
 #timer-number-20f329ecd0f6806c9b742d5bca01a95b0-secundes,
 #timer-number-20f329ecd0f6806c9b742d5bca01a95b0-hours,
-#timer-number-20f329ecd0f6806c9b742d5bca01a95b0-days { font-size: 0 !important}
+#timer-number-20f329ecd0f6806c9b742d5bca01a95b0-days {
+    font-size: 0 !important
+}
 
 
+@media screen and (min-width: 100px) and (max-width: 1024px) {
+    #timer20f329ecd0f6806c9b742d5bca01a95b {
+        margin: 0 auto;
+        position: static;
+    }
 
-@media screen and (min-width:100px) and (max-width:1024px)
-{
-  #timer20f329ecd0f6806c9b742d5bca01a95b { margin:  0  auto; position: static;}
-  #timer-text-20f329ecd0f6806c9b742d5bca01a95b-hours,
-  #timer-text-20f329ecd0f6806c9b742d5bca01a95b-minutes,
-  #timer-text-20f329ecd0f6806c9b742d5bca01a95b-secundes,
-  #timer-text-20f329ecd0f6806c9b742d5bca01a95b-days  {font-size: 14px !important;}
+    #timer-text-20f329ecd0f6806c9b742d5bca01a95b-hours,
+    #timer-text-20f329ecd0f6806c9b742d5bca01a95b-minutes,
+    #timer-text-20f329ecd0f6806c9b742d5bca01a95b-secundes,
+    #timer-text-20f329ecd0f6806c9b742d5bca01a95b-days {
+        font-size: 14px !important;
+    }
 }

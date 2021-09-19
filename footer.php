@@ -260,77 +260,229 @@
                         <div class="leap-2"></div>
 
 
-                            <fieldset id="step1" class="step1" data-window='1'>
-                                <div class="form-group">
-                                    <label for="width1" class="form-icon">
-                                        <svg width="20" height="20">
-                                            <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
-                                        </svg>
-                                    </label>
-                                    <input id="width1" type="number" name="width1" placeholder="Ширина окна (см)" class="form-control calc">
-                                </div>
-                                <div class="form-group">
-                                    <label for="height1" class="form-icon">
-                                        <svg width="20" height="20">
-                                            <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                        </svg>
-                                    </label>
-                                    <input id="height1" type="number" name="height1" placeholder="Высота окна (см) " class="form-control calc">
-                                </div>
-                                <div class="form-group">
-                                    <label for="diagonal1" class="form-icon diagonal">
-                                        <svg width="20" height="20">
-                                            <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
-                                        </svg>
-                                    </label>
-                                    <input id="diagonal1" type="number" name="diagonal1" placeholder="Диагональ окна (см) " class="form-control calc">
-                                </div>
-                                <!--*калькулятор должен по формуле Пифагора вычислять правильное значение диагонали и в случае расхождения указанного значения более чем на 2 см в большую или меньшую сторону, писать красным цветом: -->
-                                <div class="form-error d-none text-danger">Одно из значений указано неверно! Пожалуйста, измерьте окно снова и укажите верные данные</div>
-                                <button type="button" class="btn btn-more">Еще окно</button>
-                            </fieldset>
+                        <fieldset id="step1" class="step1">
+                            <div class="form-group">
+                                <label for="width1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
+                                    </svg>
+                                </label>
+                                <input id="width1" type="text" name="width1" placeholder="Ширина окна (см)"
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="height1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="height1" type="number" name="height1" placeholder="Высота окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="diagonal1" class="form-icon diagonal">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="diagonal1" type="number" name="diagonal1" placeholder="Диагональ окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <!--*калькулятор должен по формуле Пифагора вычислять правильное значение диагонали и в случае расхождения указанного значения более чем на 2 см в большую или меньшую сторону, писать красным цветом: -->
+                            <div class="form-error1 d-none text-danger">Заполните все поля</div>
+                            <div class="form-error2 d-none text-danger">Одно из значений указано неверно! Пожалуйста,
+                                измерьте окно снова и укажите верные данные
+                            </div>
+                            <!--<button type="button" class="btn btn-more d-none">Еще окно</button>-->
+                        </fieldset>
 
+                        <fieldset id="step2" class="step2 d-none">
+                            <div class="form-headline text-center">Окно 2</div>
+                            <div class="form-group">
+                                <label for="width2" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
+                                    </svg>
+                                </label>
+                                <input id="width2" type="text" name="width2" placeholder="Ширина окна (см)"
+                                       class="form-control calc2">
+                            </div>
+                            <div class="form-group">
+                                <label for="height2" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="height2" type="number" name="height2" placeholder="Высота окна (см) "
+                                       class="form-control calc2">
+                            </div>
+                            <div class="form-group">
+                                <label for="diagonal2" class="form-icon diagonal">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="diagonal2" type="number" name="diagonal2" placeholder="Диагональ окна (см) "
+                                       class="form-control calc2">
+                            </div>
+                            <!--*калькулятор должен по формуле Пифагора вычислять правильное значение диагонали и в случае расхождения указанного значения более чем на 2 см в большую или меньшую сторону, писать красным цветом: -->
+                            <div class="form-error1 d-none text-danger">Заполните все поля</div>
+                            <div class="form-error2 d-none text-danger">Одно из значений указано неверно! Пожалуйста,
+                                измерьте окно снова и укажите верные данные
+                            </div>
+                            <button type="button" class="btn btn-more">Еще окно</button>
+                        </fieldset>
+                        <fieldset id="step3" class="step3 d-none">
+                            <div class="form-group">
+                                <label for="width1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
+                                    </svg>
+                                </label>
+                                <input id="width1" type="text" name="width1" placeholder="Ширина окна (см)"
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="height1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="height1" type="number" name="height1" placeholder="Высота окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="diagonal1" class="form-icon diagonal">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="diagonal1" type="number" name="diagonal1" placeholder="Диагональ окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <!--*калькулятор должен по формуле Пифагора вычислять правильное значение диагонали и в случае расхождения указанного значения более чем на 2 см в большую или меньшую сторону, писать красным цветом: -->
+                            <div class="form-error1 d-none text-danger">Заполните все поля</div>
+                            <div class="form-error2 d-none text-danger">Одно из значений указано неверно! Пожалуйста,
+                                измерьте окно снова и укажите верные данные
+                            </div>
+                            <button type="button" class="btn btn-more">Еще окно</button>
+                        </fieldset>
+                        <fieldset id="step4" class="step4 d-none">
+                            <div class="form-group">
+                                <label for="width1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
+                                    </svg>
+                                </label>
+                                <input id="width1" type="text" name="width1" placeholder="Ширина окна (см)"
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="height1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="height1" type="number" name="height1" placeholder="Высота окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="diagonal1" class="form-icon diagonal">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="diagonal1" type="number" name="diagonal1" placeholder="Диагональ окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <!--*калькулятор должен по формуле Пифагора вычислять правильное значение диагонали и в случае расхождения указанного значения более чем на 2 см в большую или меньшую сторону, писать красным цветом: -->
+                            <div class="form-error1 d-none text-danger">Заполните все поля</div>
+                            <div class="form-error2 d-none text-danger">Одно из значений указано неверно! Пожалуйста,
+                                измерьте окно снова и укажите верные данные
+                            </div>
+                            <button type="button" class="btn btn-more">Еще окно</button>
+                        </fieldset>
+                        <fieldset id="step5" class="step5 d-none">
+                            <div class="form-group">
+                                <label for="width1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#width"></use>
+                                    </svg>
+                                </label>
+                                <input id="width1" type="text" name="width1" placeholder="Ширина окна (см)"
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="height1" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="height1" type="number" name="height1" placeholder="Высота окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <div class="form-group">
+                                <label for="diagonal1" class="form-icon diagonal">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#height"></use>
+                                    </svg>
+                                </label>
+                                <input id="diagonal1" type="number" name="diagonal1" placeholder="Диагональ окна (см) "
+                                       class="form-control calc1">
+                            </div>
+                            <!--*калькулятор должен по формуле Пифагора вычислять правильное значение диагонали и в случае расхождения указанного значения более чем на 2 см в большую или меньшую сторону, писать красным цветом: -->
+                            <div class="form-error1 d-none text-danger">Заполните все поля</div>
+                            <div class="form-error2 d-none text-danger">Одно из значений указано неверно! Пожалуйста,
+                                измерьте окно снова и укажите верные данные
+                            </div>
+                            <button type="button" class="btn btn-more">Еще окно</button>
+                        </fieldset>
 
 
                         <br>
-                        <div class="form-group">
-                            <label for="blue-city" class="form-icon">
-                                <svg width="20" height="20">
-                                    <use xlink:href="./img/svg/symbol/sprite.svg#map"></use>
-                                </svg>
-                            </label>
-                            <select type="text" name="city" placeholder="Выберите город" class="form-control custom-select" id="order-city">
-                                <option value="Нур Султан">Нур Султан</option>
-                                <option value="Алматы">Алматы</option>
-                                <option value="Шымкент">Шымкент</option>
-                                <option value="Павлодар">Павлодар</option>
-                                <option value="Караганда">Караганда</option>
-                                <option value="Семей">Семей</option>
-                                <option value="Актобе">Актобе</option>
-                                <option value="Атырау">Атырау</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="blue-phone" class="form-icon">
-                                <svg width="20" height="20">
-                                    <use xlink:href="./img/svg/symbol/sprite.svg#phone"></use>
-                                </svg>
-                            </label>
-                            <input type="text" name="phone" placeholder="Ваш телефон" class="form-control" id="order-phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="blue-adress" class="form-icon">
-                                <svg width="20" height="20">
-                                    <use xlink:href="./img/svg/symbol/sprite.svg#map"></use>
-                                </svg>
-                            </label>
-                            <input type="text" name="adress" placeholder="Ваш адрес" class="form-control" id="order-adress">
-                        </div>
-                        <p class="price-form__itog">Общая стоимость: <span id="itog">56 700</span> тенге</p>
+                        <fieldset id="data-user">
+                            <div class="form-group">
+                                <label for="blue-city" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#map"></use>
+                                    </svg>
+                                </label>
+                                <select type="text" name="city" placeholder="Выберите город" class="form-control custom-select user" id="order-city">
+                                    <option value="Нур Султан">Нур Султан</option>
+                                    <option value="Алматы">Алматы</option>
+                                    <option value="Шымкент">Шымкент</option>
+                                    <option value="Павлодар">Павлодар</option>
+                                    <option value="Караганда">Караганда</option>
+                                    <option value="Семей">Семей</option>
+                                    <option value="Актобе">Актобе</option>
+                                    <option value="Атырау">Атырау</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="blue-phone" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#phone"></use>
+                                    </svg>
+                                </label>
+                                <input type="text" name="phone" placeholder="Ваш телефон" class="form-control user"
+                                       id="order-phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="blue-adress" class="form-icon">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="./img/svg/symbol/sprite.svg#map"></use>
+                                    </svg>
+                                </label>
+                                <input type="text" name="adress" placeholder="Ваш адрес" class="form-control user"
+                                       id="order-adress">
+                            </div>
+                        </fieldset>
+                        <p class="price-form__itog">Общая стоимость: <span id="itog">0</span> тенге</p>
                         <div class="text-center">
-                            <button id="order-btn" type="button" class="btn btn-order">Оплатить
+                            <button id="order-btn" type="button" class="btn btn-order disabled">Оплатить
                                 <span class="btn-arrow-right">
-                                    <svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg>
+                                    <svg width="18" height="18"><use
+                                                xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg>
                                 </span>
                             </button>
                         </div>
@@ -404,7 +556,8 @@
             </div>
             <div class="social-item ml-1">
                 <a href="https://www.youtube.com/channel/UC5ATXpHFpO4jH2kuS_JS18w" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="-35.20005 -41.33325 305.0671 247.9995">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28"
+                         viewBox="-35.20005 -41.33325 305.0671 247.9995">
                         <path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85"
                               fill="red"/>
                         <path d="M93.333 117.559l61.333-34.89-61.333-34.894z" fill="#fff"/>
@@ -428,13 +581,12 @@
 <script src="/js/calc.js"></script>
 
 
-
 <script src="/js/extras.js"></script>
 <script src="/js/jquery.inputmask.bundle.js"></script>
 
 
 <script>
-    this.pay = function (summa) {
+    function pay(summa) {
         var widget = new cp.CloudPayments();
         widget.pay('auth', // или 'charge'
             { //options
@@ -644,8 +796,8 @@
     //Синий блок оплата
     $(document).on('click', 'form.price-form.form-blue .zakaz_data', function (e) {
         var city = $('form.price-form.form-blue #order-city').val();
-        var width  	=  	$('form.price-form.form-blue #blue-width').val();
-        var name  	=  	$('form.price-form.form-blue #blue-name').val();
+        var width = $('form.price-form.form-blue #blue-width').val();
+        var name = $('form.price-form.form-blue #blue-name').val();
         var phone = $('form.price-form.form-blue #blue-phone').val();
         var buttom = '<button type="submit" class="btn btn-order zakaz_data">Купить со скидкой <span class="btn-arrow-right"><svg width="18" height="18"><use xlink:href="./img/svg/symbol/sprite.svg#arrow-sm-right"></use></svg></span></button>';
 
