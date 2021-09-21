@@ -838,6 +838,10 @@ body {
   position: relative;
 }
 
+.price-form .text-danger {
+  font-size: 14px;
+}
+
 .price-form .form-icon {
   position: absolute;
   left: 0;

@@ -664,6 +664,12 @@ img {
 .price-form .form-group {
 	position: relative
 }
+.price-form .text-danger {
+	font-size: 18px;
+	color: red!important;
+	text-shadow: none;
+	font-weight: bold;
+}
 .price-form .form-icon {
 	position: absolute;
 	left: 0;
