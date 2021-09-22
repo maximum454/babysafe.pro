@@ -808,7 +808,11 @@ img {
 	margin-top: 20px;
 }
 .price-form__close{
-
+	width: 100%;
+	background-color: #0000;
+	border: none;
+	color: #f00;
+	opacity: .8;
 }
 #footer {
 	padding-top: 40px;
