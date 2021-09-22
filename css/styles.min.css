@@ -807,6 +807,9 @@ img {
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
+.price-form__close{
+
+}
 #footer {
 	padding-top: 40px;
 	padding-bottom: 40px
@@ -851,8 +854,11 @@ img {
 #callModalSkidos .modal-content, {background: 0 0;border: 0}
 
 
-#callModal .close, #callModalPartnership .close,
-#callModalSkidos .close, #callModalPartnership .close
+#callModal .close,
+#callModalPartnership .close,
+#callModalSkidos .close,
+#callModalPartnership .close,
+#priceModal .close
  {
 	z-index: 9999;
 	position: relative;

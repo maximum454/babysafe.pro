@@ -289,7 +289,7 @@ include('./header.php'); ?>
 </section>
 
 
-<section id="price" class="pb-md-5 pb-lg-0">
+<section id="price" class="pb-md-5 pb-lg-0 d-none">
     <div class="container">
         <h2 class="hdr"></h2>
 

@@ -1,4 +1,4 @@
-const price = 18900;
+const price = 19900;
 const step1 = document.getElementById('step1');
 const step2 = document.getElementById('step2');
 const step3 = document.getElementById('step3');
@@ -18,8 +18,6 @@ step1.addEventListener('keyup',  (e)=>{
         target.setAttribute('value', target.value);
         if(target.getAttribute('name') == 'steps[1][width]'){
             width1 = target.value;
-
-            console.log(width1)
         }
         else if(target.getAttribute('name') == 'steps[1][height]'){
             height1 = target.value;
@@ -30,19 +28,20 @@ step1.addEventListener('keyup',  (e)=>{
 
         if(width1 && height1 && diagonal1){
             let dValue = calculateDiagonal(width1,height1,diagonal1);
-            target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-            if(Math.abs(dValue) > 2){
-                target.closest('.step').querySelector('.btn-more').classList.add('d-none');
-                target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-                target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-                calculatePrice(price, 0)
 
+            target.closest('.step').querySelector('.form-error1').classList.add('d-none');
+
+            if(dValue < 2){
+                target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
+                target.closest('.step').querySelector('.form-error2').classList.add('d-none');
+                windowCount = windowCount+1;
+                calculatePrice(price, windowCount)
+                return windowCount;
             }
             else{
-                target.closest('.step').querySelector('.btn-more').classList.remove('d-none')
-                windowCount = target.closest('.step').getAttribute('data-count');
-                calculatePrice(price, windowCount)
-
+                target.closest('.step').querySelector('.btn-more').classList.add('d-none')
+                target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
+                calculatePrice(price, 0)
             }
 
         }
@@ -76,14 +75,18 @@ step2.addEventListener('keyup',  (e)=>{
     if(width2 && height2 && diagonal2){
         let dValue = calculateDiagonal(width1,height1,diagonal2)
         target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-        if(Math.abs(dValue) > 2){
+        if(dValue < 2){
+            target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
             target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-            target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-            calculatePrice(price, 1)
+            target.closest('.step').querySelector('.form-error2').classList.add('d-none');
+            windowCount = windowCount+1;
+            calculatePrice(price, windowCount)
+            return windowCount;
         }
         else{
-            windowCount = target.closest('.step').getAttribute('data-count');
-            calculatePrice(price, windowCount)
+            target.closest('.step').querySelector('.btn-more').classList.add('d-none')
+            target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
+            calculatePrice(price, 1)
         }
 
     }
@@ -96,6 +99,18 @@ step2.addEventListener('keyup',  (e)=>{
 step2.querySelector('.btn-more').addEventListener('click', (e)=> {
     step3.classList.remove('d-none');
 })
+step2.querySelector('.price-form__close').addEventListener('click', (e)=> {
+   let inputs = step2.querySelectorAll('.form-control');
+    for (let i = 0; i<inputs.length; i++) {
+        inputs[i].value = '';
+    }
+    width2 = 0;
+    height2 = 0;
+    diagonal2 = 0;
+    step2.classList.add('d-none');
+    windowCount = windowCount-1;
+    calculatePrice(price, windowCount)
+})
 
 //вычисления третьего окна
 let width3 = 0;
@@ -104,10 +119,10 @@ let diagonal3 = 0;
 step3.addEventListener('keyup',  (e)=>{
     let target = e.target
     target.setAttribute('value', target.value);
-    if(target.getAttribute('name') == 'steps[3][diagonal]'){
+    if(target.getAttribute('name') == 'steps[3][width]'){
         width3 = target.value;
     }
-    else if(target.getAttribute('name') == 'steps[3][diagonal]'){
+    else if(target.getAttribute('name') == 'steps[3][height]'){
         height3 = target.value;
     }
     else if(target.getAttribute('name') == 'steps[3][diagonal]'){
@@ -117,14 +132,17 @@ step3.addEventListener('keyup',  (e)=>{
     if(width3 && height3 && diagonal3){
         let dValue = calculateDiagonal(width3,height3,diagonal3)
         target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-        if(Math.abs(dValue) > 2){
-            target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-            target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-            calculatePrice(price, 2)
+        if(dValue < 2){
+            target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
+            target.closest('.step').querySelector('.form-error2').classList.add('d-none');
+            windowCount = windowCount+1;
+            calculatePrice(price, windowCount)
+            return windowCount;
         }
         else{
-            windowCount = target.closest('.step').getAttribute('data-count');
-            calculatePrice(price, windowCount)
+            target.closest('.step').querySelector('.btn-more').classList.add('d-none')
+            target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
+            calculatePrice(price, 2)
         }
 
     }
@@ -137,6 +155,18 @@ step3.addEventListener('keyup',  (e)=>{
 step3.querySelector('.btn-more').addEventListener('click', (e)=> {
     step4.classList.remove('d-none');
 })
+step3.querySelector('.price-form__close').addEventListener('click', (e)=> {
+    let inputs = step3.querySelectorAll('.form-control');
+    for (let i = 0; i<inputs.length; i++) {
+        inputs[i].value = '';
+    }
+    width3 = 0;
+    height3 = 0;
+    diagonal3 = 0;
+    step3.classList.add('d-none');
+    windowCount = windowCount-1;
+    calculatePrice(price, windowCount)
+})
 
 //вычисления четвертого окна
 let width4 = 0;
@@ -145,10 +175,10 @@ let diagonal4 = 0;
 step4.addEventListener('keyup',  (e)=>{
     let target = e.target
     target.setAttribute('value', target.value);
-    if(target.getAttribute('name') == 'steps[4][diagonal]'){
+    if(target.getAttribute('name') == 'steps[4][width]'){
         width4 = target.value;
     }
-    else if(target.getAttribute('name') == 'steps[4][diagonal]'){
+    else if(target.getAttribute('name') == 'steps[4][height]'){
         height4 = target.value;
     }
     else if(target.getAttribute('name') == 'steps[4][diagonal]'){
@@ -158,14 +188,19 @@ step4.addEventListener('keyup',  (e)=>{
     if(width4 && height4 && diagonal4){
         let dValue = calculateDiagonal(width4,height4,diagonal4)
         target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-        if(Math.abs(dValue) > 2){
-            step4.querySelector('.form-error1').classList.add('d-none');
-            step4.querySelector('.form-error2').classList.remove('d-none');
-            calculatePrice(price, 3)
+        if(dValue < 2){
+            target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
+            target.closest('.step').querySelector('.form-error1').classList.add('d-none');
+            target.closest('.step').querySelector('.form-error2').classList.add('d-none');
+            windowCount = windowCount+1;
+            calculatePrice(price, windowCount)
+            return windowCount;
         }
         else{
-            windowCount = target.closest('.step').getAttribute('data-count');
-            calculatePrice(price, windowCount)
+            target.closest('.step').querySelector('.btn-more').classList.add('d-none')
+            target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
+
+            calculatePrice(price, 3)
         }
 
     }
@@ -178,7 +213,18 @@ step4.addEventListener('keyup',  (e)=>{
 step4.querySelector('.btn-more').addEventListener('click', (e)=> {
     step5.classList.remove('d-none');
 })
-
+step4.querySelector('.price-form__close').addEventListener('click', (e)=> {
+    let inputs = step4.querySelectorAll('.form-control');
+    for (let i = 0; i<inputs.length; i++) {
+        inputs[i].value = '';
+    }
+    width4 = 0;
+    height4 = 0;
+    diagonal4 = 0;
+    windowCount = windowCount-1;
+    calculatePrice(price, windowCount)
+    step4.classList.add('d-none');
+})
 //вычисления пятого окна
 let width5 = 0;
 let height5 = 0;
@@ -186,10 +232,10 @@ let diagonal5 = 0;
 step5.addEventListener('keyup',  (e)=>{
     let target = e.target
     target.setAttribute('value', target.value);
-    if(target.getAttribute('name') == 'steps[5][diagonal]'){
+    if(target.getAttribute('name') == 'steps[5][width]'){
         width5 = target.value;
     }
-    else if(target.getAttribute('name') == 'steps[5][diagonal]'){
+    else if(target.getAttribute('name') == 'steps[5][height]'){
         height5 = target.value;
     }
     else if(target.getAttribute('name') == 'steps[5][diagonal]'){
@@ -199,14 +245,17 @@ step5.addEventListener('keyup',  (e)=>{
     if(width5 && height5 && diagonal5){
         let dValue = calculateDiagonal(width5,height5,diagonal5)
         target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-        if(Math.abs(dValue) > 2){
-            step4.querySelector('.form-error1').classList.add('d-none');
-            step4.querySelector('.form-error2').classList.remove('d-none');
-            calculatePrice(price, 4)
+        if(dValue < 2){
+            target.closest('.step').querySelector('.form-error1').classList.add('d-none');
+            target.closest('.step').querySelector('.form-error2').classList.add('d-none');
+            windowCount = windowCount+1;
+            calculatePrice(price, windowCount)
+            return windowCount;
+
         }
         else{
-            windowCount = target.closest('.step').getAttribute('data-count');
-            calculatePrice(price, windowCount)
+            target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
+            calculatePrice(price, 4)
         }
 
     }
@@ -216,7 +265,18 @@ step5.addEventListener('keyup',  (e)=>{
         calculatePrice(price, 4)
     }
 })
-
+step5.querySelector('.price-form__close').addEventListener('click', (e)=> {
+    let inputs = step5.querySelectorAll('.form-control');
+    for (let i = 0; i<inputs.length; i++) {
+        inputs[i].value = '';
+    }
+    width5 = 0;
+    height5 = 0;
+    diagonal5 = 0;
+    windowCount = windowCount-1;
+    calculatePrice(price, windowCount)
+    step5.classList.add('d-none');
+})
 // User
 const orderCity = document.getElementById('order-city');
 const users = document.querySelectorAll('.user');
@@ -251,8 +311,9 @@ const orderBtn = document.getElementById('order-btn');
 //Функция возвращает разницу диагоналей
 function calculateDiagonal(width, height, diagonal){
     let dSqrt = Math.sqrt(width**2 + height**2)
-    let d = diagonal - dSqrt;
-    return d;
+    let  d = diagonal - dSqrt;
+    let  abs = Math.abs(d);
+    return abs;
 }
 //Подсчет цены
 function calculatePrice(price, windowCount){

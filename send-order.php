@@ -49,6 +49,7 @@ $message = "<table style='width: 100%;'>$message</table><br>$steps_data";
 
 $mail = new PHPMailer;
 $mail->addAddress('maximum454@gmail.com');
+$mail->addAddress('Yerlan-ali@mail.ru');
 $mail->Subject = $subject;
 $mail->Body    = $message;
 
