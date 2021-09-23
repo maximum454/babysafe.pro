@@ -167,8 +167,7 @@ include('./header.php'); ?>
                 <div class="item">
                     <div class="icon"><img src="./img/images/contract-2.svg" alt=""></div>
                     <button class="btn btn-know callModalPartnership" type="button" data-direction="Договор"
-                            data-toggle="modal" data-target="#callModalPartnership">Скачать образец договор
-                    </button>
+                            data-toggle="modal" data-target="#callModalPartnership">Образец договора</button>
                 </div>
             </div>
             <div class="col-12 col-md-4 col-lg-4 mb-4 mb-md-0">
@@ -176,7 +175,7 @@ include('./header.php'); ?>
                     <div class="icon"><img src="./img/images/folder-2.svg" alt=""></div>
                     <button class="btn btn-know callModalPartnership" type="button"
                             data-direction="Инструкция по сборке" data-toggle="modal"
-                            data-target="#callModalPartnership">Скачать инструкцию по сборке pdf
+                            data-target="#callModalPartnership">Инструкция по сборке pdf
                     </button>
                 </div>
             </div>
@@ -184,7 +183,7 @@ include('./header.php'); ?>
                 <div class="item">
                     <div class="icon"><img src="./img/images/video.png" alt=""></div>
                     <button class="btn btn-know callModalPartnership" type="button" data-direction="Видеоинструкция"
-                            data-toggle="modal" data-target="#callModalPartnership">Скачать видео о технологии сборки
+                            data-toggle="modal" data-target="#callModalPartnership">Видео о технологии сборки
                     </button>
                 </div>
             </div>
