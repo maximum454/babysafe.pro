@@ -1,4 +1,4 @@
-const price = 19900;
+const price = 19990;
 const priceFormOrder = document.getElementById('price-form-order');
 const step1 = document.getElementById('step1');
 const step2 = document.getElementById('step2');

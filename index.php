@@ -718,7 +718,7 @@ include('./header.php'); ?>
         </div>
     </div>
 </section>
-<?php if ($_REQUEST['key'] == 'price') : ?>
+
 <section id="price-order" class="pb-md-5 pb-lg-0">
     <div class="container">
         <h2 class="hdr">Самостоятельно сделайте замер
@@ -738,7 +738,7 @@ include('./header.php'); ?>
         </div>
     </div>
 </section>
-<?php endif;?>
+
 <section id="features">
     <div class="container">
         <h2 class="hdr">ПРЕИМУЩЕСТВА безопасных москитных сеток <span class="blue">BABYSAFE</span></h2>
