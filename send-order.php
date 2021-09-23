@@ -9,7 +9,8 @@ $form_data = array(
     'Страница'	=> 'babysafe.pro ',
     'Форма' 	=> 'Оплатили заказ',
     'Телефон' 	=> $_POST['phone'] ?: 'Не указан',
-    'Адрес' 		=> $_POST['adress'] ?: 'Не указан'
+    'Адрес' 		=> $_POST['adress'] ?: 'Не указан',
+    'Сумма' 		=> $_POST['priceitog'] ?: '0',
 );
 
 $c = true;
@@ -48,7 +49,6 @@ $message = "<table style='width: 100%;'>$message</table><br>$steps_data";
 
 
 $mail = new PHPMailer;
-$mail->addAddress('maximum454@gmail.com');
 $mail->addAddress('Yerlan-ali@mail.ru');
 $mail->Subject = $subject;
 $mail->Body    = $message;

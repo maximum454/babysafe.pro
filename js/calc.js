@@ -1,4 +1,5 @@
 const price = 19900;
+const priceFormOrder = document.getElementById('price-form-order');
 const step1 = document.getElementById('step1');
 const step2 = document.getElementById('step2');
 const step3 = document.getElementById('step3');
@@ -28,27 +29,26 @@ step1.addEventListener('keyup',  (e)=>{
 
         if(width1 && height1 && diagonal1){
             let dValue = calculateDiagonal(width1,height1,diagonal1);
-
             target.closest('.step').querySelector('.form-error1').classList.add('d-none');
-
             if(dValue < 2){
                 target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
                 target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-                windowCount = windowCount+1;
-                calculatePrice(price, windowCount)
-                return windowCount;
+                target.closest('.step').setAttribute('data-ok', true)
+                calculatePrice2();
             }
             else{
                 target.closest('.step').querySelector('.btn-more').classList.add('d-none')
                 target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-                calculatePrice(price, 0)
+                target.closest('.step').setAttribute('data-ok', false)
+                calculatePrice2();
             }
-
         }
         else{
+            target.closest('.step').querySelector('.btn-more').classList.add('d-none');
             target.closest('.step').querySelector('.form-error1').classList.remove('d-none');
             target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-            calculatePrice(price, 0)
+            target.closest('.step').setAttribute('data-ok', false)
+            calculatePrice2();
         }
     })
 step1.querySelector('.btn-more').addEventListener('click', (e)=> {
@@ -79,37 +79,33 @@ step2.addEventListener('keyup',  (e)=>{
             target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
             target.closest('.step').querySelector('.form-error1').classList.add('d-none');
             target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-            windowCount = windowCount+1;
-            calculatePrice(price, windowCount)
-            return windowCount;
+            target.closest('.step').setAttribute('data-ok', true)
+            calculatePrice2();
+
         }
         else{
             target.closest('.step').querySelector('.btn-more').classList.add('d-none')
             target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-            calculatePrice(price, 1)
+            target.closest('.step').setAttribute('data-ok', false)
+            calculatePrice2();
         }
-
     }
     else{
+        target.closest('.step').querySelector('.btn-more').classList.add('d-none');
         target.closest('.step').querySelector('.form-error1').classList.remove('d-none');
         target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-        calculatePrice(price, 1)
+        target.closest('.step').setAttribute('data-ok', false)
+        calculatePrice2();
     }
 })
 step2.querySelector('.btn-more').addEventListener('click', (e)=> {
     step3.classList.remove('d-none');
 })
 step2.querySelector('.price-form__close').addEventListener('click', (e)=> {
-   let inputs = step2.querySelectorAll('.form-control');
-    for (let i = 0; i<inputs.length; i++) {
-        inputs[i].value = '';
-    }
     width2 = 0;
     height2 = 0;
     diagonal2 = 0;
-    step2.classList.add('d-none');
-    windowCount = windowCount-1;
-    calculatePrice(price, windowCount)
+    windowDel(e);
 })
 
 //вычисления третьего окна
@@ -135,37 +131,33 @@ step3.addEventListener('keyup',  (e)=>{
         if(dValue < 2){
             target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
             target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-            windowCount = windowCount+1;
-            calculatePrice(price, windowCount)
-            return windowCount;
+            target.closest('.step').setAttribute('data-ok', true)
+            calculatePrice2();
         }
         else{
             target.closest('.step').querySelector('.btn-more').classList.add('d-none')
             target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-            calculatePrice(price, 2)
+            target.closest('.step').setAttribute('data-ok', false)
+            calculatePrice2();
         }
 
     }
     else{
+        target.closest('.step').querySelector('.btn-more').classList.add('d-none');
         target.closest('.step').querySelector('.form-error1').classList.remove('d-none');
         target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-        calculatePrice(price, 2)
+        target.closest('.step').setAttribute('data-ok', false)
+        calculatePrice2();
     }
 })
 step3.querySelector('.btn-more').addEventListener('click', (e)=> {
     step4.classList.remove('d-none');
 })
 step3.querySelector('.price-form__close').addEventListener('click', (e)=> {
-    let inputs = step3.querySelectorAll('.form-control');
-    for (let i = 0; i<inputs.length; i++) {
-        inputs[i].value = '';
-    }
     width3 = 0;
     height3 = 0;
     diagonal3 = 0;
-    step3.classList.add('d-none');
-    windowCount = windowCount-1;
-    calculatePrice(price, windowCount)
+    windowDel(e);
 })
 
 //вычисления четвертого окна
@@ -192,38 +184,32 @@ step4.addEventListener('keyup',  (e)=>{
             target.closest('.step').querySelector('.btn-more').classList.remove('d-none');
             target.closest('.step').querySelector('.form-error1').classList.add('d-none');
             target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-            windowCount = windowCount+1;
-            calculatePrice(price, windowCount)
-            return windowCount;
+            target.closest('.step').setAttribute('data-ok', true)
+            calculatePrice2();
         }
         else{
             target.closest('.step').querySelector('.btn-more').classList.add('d-none')
             target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-
-            calculatePrice(price, 3)
+            target.closest('.step').setAttribute('data-ok', false)
+            calculatePrice2();
         }
-
     }
     else{
+        target.closest('.step').querySelector('.btn-more').classList.add('d-none');
         target.closest('.step').querySelector('.form-error1').classList.remove('d-none');
         target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-        calculatePrice(price, 3)
+        target.closest('.step').setAttribute('data-ok', false)
+        calculatePrice2();
     }
 })
 step4.querySelector('.btn-more').addEventListener('click', (e)=> {
     step5.classList.remove('d-none');
 })
 step4.querySelector('.price-form__close').addEventListener('click', (e)=> {
-    let inputs = step4.querySelectorAll('.form-control');
-    for (let i = 0; i<inputs.length; i++) {
-        inputs[i].value = '';
-    }
     width4 = 0;
     height4 = 0;
     diagonal4 = 0;
-    windowCount = windowCount-1;
-    calculatePrice(price, windowCount)
-    step4.classList.add('d-none');
+    windowDel(e);
 })
 //вычисления пятого окна
 let width5 = 0;
@@ -248,61 +234,59 @@ step5.addEventListener('keyup',  (e)=>{
         if(dValue < 2){
             target.closest('.step').querySelector('.form-error1').classList.add('d-none');
             target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-            windowCount = windowCount+1;
-            calculatePrice(price, windowCount)
-            return windowCount;
+            step5.setAttribute('data-ok', true)
+            calculatePrice2();
 
         }
         else{
             target.closest('.step').querySelector('.form-error2').classList.remove('d-none');
-            calculatePrice(price, 4)
+            step5.setAttribute('data-ok', false)
+            calculatePrice2();
         }
 
     }
     else{
         target.closest('.step').querySelector('.form-error1').classList.remove('d-none');
         target.closest('.step').querySelector('.form-error2').classList.add('d-none');
-        calculatePrice(price, 4)
+        calculatePrice2();
+
     }
 })
 step5.querySelector('.price-form__close').addEventListener('click', (e)=> {
-    let inputs = step5.querySelectorAll('.form-control');
-    for (let i = 0; i<inputs.length; i++) {
-        inputs[i].value = '';
-    }
+
     width5 = 0;
     height5 = 0;
     diagonal5 = 0;
-    windowCount = windowCount-1;
-    calculatePrice(price, windowCount)
-    step5.classList.add('d-none');
+    windowDel(e);
 })
 // User
 const orderCity = document.getElementById('order-city');
-const users = document.querySelectorAll('.user');
+const users = document.getElementById('data-user');
 let city = '';
 let phone = '';
 let adress = '';
-for(let user of users){
 
-    user.addEventListener('keyup', (e)=>{
-        let target = e.target
+users.addEventListener('keyup', (e)=>{
+    let target = e.target
 
-        if(target.getAttribute('name') == 'phone'){
-            phone = user.value;
-        }
-        if(target.getAttribute('name') == 'adress'){
-            adress = user.value;
-        }
+    if(target.getAttribute('name') == 'phone'){
+        phone = target.value;
+    }
+    if(target.getAttribute('name') == 'adress'){
+        adress = target.value;
+    }
 
-        if(orderCity.value && phone && adress && itog.innerText > 0){
+
+    if(orderCity.value && phone && adress && itog.innerText){
+        if(true){
             orderBtn.classList.remove('disabled');
         }
-        else{
-            orderBtn.classList.add('disabled');
-        }
-    })
-}
+
+    }
+    else{
+        orderBtn.classList.add('disabled');
+    }
+})
 
 const orderBtn = document.getElementById('order-btn');
 
@@ -318,6 +302,38 @@ function calculateDiagonal(width, height, diagonal){
 //Подсчет цены
 function calculatePrice(price, windowCount){
     itog.innerHTML = price * windowCount;
+}
+//Подсчет цены
+function calculatePrice2(){
+    let steps = priceFormOrder.querySelectorAll('.step');
+    let countTrue = 0;
+    let countfalse = 0;
+
+    for(let step of steps){
+        if(step.getAttribute('data-ok') == 'true'){
+            countTrue++
+            itog.innerHTML = price * countTrue;
+            priceitog.value = price * countTrue;
+        }else{
+            countfalse++
+            if(countfalse == 5){
+                itog.innerHTML = 0;
+                priceitog.value =0;
+            }
+        }
+    }
+}
+
+function windowDel(e){
+    let target = e.target;
+    let inputs = target.closest('.step').querySelectorAll('.form-control');
+    for (let i = 0; i<inputs.length; i++) {
+        inputs[i].value = '';
+    }
+
+    target.closest('.step').classList.add('d-none');
+    target.closest('.step').setAttribute('data-ok', false)
+    calculatePrice2();
 }
 
 $(function (){

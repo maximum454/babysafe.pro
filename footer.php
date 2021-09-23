@@ -15,7 +15,7 @@
                         <div class="leap-2"></div>
 
 
-                        <fieldset id="step1" class="step" data-count="1">
+                        <fieldset id="step1" class="step" data-ok="false">
                             <input type="hidden" name="steps[1][title]" value="Окно 1">
                             <div class="form-group">
                                 <label for="width1" class="form-icon">
@@ -52,7 +52,7 @@
                             <button type="button" class="btn btn-more d-none">Еще окно</button>
                         </fieldset>
 
-                        <fieldset id="step2" class="step d-none" data-count="2">
+                        <fieldset id="step2" class="step d-none" data-ok="false">
                             <input type="hidden" name="steps[2][title]" value="Окно 2">
                             <div class="form-headline text-center">Окно 2</div>
                             <div class="form-group">
@@ -90,7 +90,7 @@
                             <button type="button" class="price-form__close">Убрать окно</button>
                             <button type="button" class="btn btn-more d-none">Еще окно</button>
                         </fieldset>
-                        <fieldset id="step3" class="step d-none" data-count="3">
+                        <fieldset id="step3" class="step d-none" data-ok="false">
 
                             <input type="hidden" name="steps[3][title]" value="Окно 3">
                             <div class="form-headline text-center">Окно 3</div>
@@ -128,7 +128,7 @@
                             <button type="button" class="price-form__close">Убрать окно</button>
                             <button type="button" class="btn btn-more d-none">Еще окно</button>
                         </fieldset>
-                        <fieldset id="step4" class="step d-none" data-count="4">
+                        <fieldset id="step4" class="step d-none" data-ok="false">
                             <input type="hidden" name="steps[4][title]" value="Окно 4">
                             <div class="form-headline text-center">Окно 4</div>
                             <div class="form-group">
@@ -166,7 +166,7 @@
                             <button type="button" class="price-form__close">Убрать окно</button>
                             <button type="button" class="btn btn-more d-none">Еще окно</button>
                         </fieldset>
-                        <fieldset id="step5" class="step d-none" data-count="5">
+                        <fieldset id="step5" class="step d-none" data-ok="false">
 
                             <input type="hidden" name="steps[5][title]" value="Окно 5">
                             <div class="form-headline text-center">Окно 5</div>
@@ -245,6 +245,7 @@
                             </div>
                         </fieldset>
                         <p class="price-form__itog">Общая стоимость: <span id="itog">0</span> тенге</p>
+                        <input id="priceitog" type="hidden" name="priceitog" value="0">
                         <div class="text-center">
                             <button id="order-btn" type="button" class="btn btn-order disabled">Оплатить
                                 <span class="btn-arrow-right">
