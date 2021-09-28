@@ -21,8 +21,8 @@ include('./header.php'); ?>
                     <div class="acciya">Акция <span>-20%</span></div>
                     <div class="sum">
                         <!--span style="text-transform: none; color:#3C72DC">ко дню Защиты детей!</span><br!-->
-                        <strike>24 900</strike> <span style="text-transform: none;">тенге</span><br>
-                        <span class="red">19 900 <span
+                        <strike>25 000</strike> <span style="text-transform: none;">тенге</span><br>
+                        <span class="red">19 990 <span
                                     style="text-transform: none;">тенге на одно окно </span> </span><br>
                         <!--span style="text-transform: none; color:#3C72DC">Акция действует только до 1 июня!!!</span><br!-->
                     </div>

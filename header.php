@@ -178,6 +178,9 @@ else
                     <li class="nav-item <?= $active_5; ?>">
                         <a class="nav-link" href="/partnership.php">Условия сотрудничества</a>
                     </li>
+                    <li class="nav-item <?= $active_6; ?>">
+                        <a class="nav-link" href="/pay.php">Оплата</a>
+                    </li>
                     <!--li class="nav-item <?= $active_6; ?>">
 <a class="nav-link" href="/regions.php">Представители в регионах</a>
 </li!-->

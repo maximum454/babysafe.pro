@@ -12,10 +12,10 @@ include('./header.php'); ?>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form class="pay-page" style="max-width: 400px">
+                    <form id="pay-page" style="max-width: 400px">
                         <div class="form-group">
                             <label for="summa">Сумма</label>
-                            <input type="number" class="form-control" name="pay-summa" id="pay-summa" value="0">
+                            <input type="number" class="form-control" name="pay-summa" id="pay-summa" value="">
                             <small id="emailHelp" class="form-text text-muted">Введите сумму для оплаты</small>
                         </div>
                         <button id="pay-send" type="submit" class="btn btn-primary">Оплатить</button>
