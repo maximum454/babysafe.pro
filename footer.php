@@ -534,7 +534,7 @@
                     <svg width="18" height="18">
                         <use xlink:href="./img/svg/symbol/sprite.svg#phon-footer"></use>
                     </svg>
-                    8 777 474 84 94</a></div>
+                    8 776 706 10 10</a></div>
             <div class="mail mb-3 mb-lg-2 d-flex">
                 <div class="icon">
                     <svg width="18" height="18">
